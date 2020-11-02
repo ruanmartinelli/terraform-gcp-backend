@@ -4,11 +4,11 @@ locals {
   # Add the project id to `terraform.tfstate`
   project = var.project
 
-  region = "us-central1"
+  region   = "us-central1"
   location = "us-central"
-  
-  function_name="api-development"
-  function_entry_point="app"
+
+  function_name        = "api-development"
+  function_entry_point = "app"
 }
 
 provider "google" {

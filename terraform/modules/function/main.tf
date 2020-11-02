@@ -1,12 +1,14 @@
 locals {
   timestamp = formatdate("YYMMDDhhmmss", timestamp())
+  root_dir  = abspath("../../..")
 }
 
 # Compress source code
 data "archive_file" "source" {
   type        = "zip"
-  source_dir  = "../../../"
+  source_dir  = local.root_dir
   output_path = "/tmp/function-${local.timestamp}.zip"
+  excludes = ["node_modules", "src", "terraform", "test"]
 }
 
 # Create bucket that will host the source code
