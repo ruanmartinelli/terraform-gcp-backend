@@ -24,7 +24,7 @@
   "nodemonConfig": {
     "delay": "500",
     "watch": "src",
-    "exec": "npm start || exit 1"
+    "exec": "make run || exit 1"
   },
   "jest": {
     "moduleFileExtensions": [
