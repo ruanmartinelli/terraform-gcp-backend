@@ -8,6 +8,7 @@ dev:
 
 build:
 	./node_modules/.bin/tsc -p tsconfig.json
+	npx cpx 'src/**/*.ejs' 'dist'
 
 # Run tests
 test:
