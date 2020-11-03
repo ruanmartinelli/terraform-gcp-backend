@@ -13,5 +13,9 @@ build:
 test:
 	npx jest
 
+# Lint
+lint:
+	npx gts fix
+
 .SILENT:
 .PHONY: test dev build run
