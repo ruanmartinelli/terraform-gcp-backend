@@ -15,14 +15,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
-
       - name: Install dependencies
         run: npm i
-
-      # Run tests
       - name: Test
         run: make test
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: terraform init terraform/environments/development 
+      - run: terraform validate terraform/environments/development 
