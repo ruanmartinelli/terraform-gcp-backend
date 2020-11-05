@@ -39,4 +39,4 @@ jobs:
       - run: gcloud info
       - run: terraform init terraform/environments/development
       - run: terraform validate terraform/environments/development
-      - run: terraform apply terraform/environments/development -auto-approve
+      - run: terraform apply -auto-approve terraform/environments/development
