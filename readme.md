@@ -7,8 +7,7 @@
 - Node.js API, using Fastify
 - Database, using Cloud Firestore
 - Hosting, using Cloud Functions
-- CI/CD, using Cloud Build (soon™️)
-<!-- - Frontend, using IDK (soon™️) -->
+- CI/CD, using GitHub Actions
 
 ## Prerequisites
 

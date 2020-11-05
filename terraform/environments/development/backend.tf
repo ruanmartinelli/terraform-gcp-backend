@@ -4,3 +4,7 @@ terraform {
     prefix = "env/development"
   }
 }
+
+# terraform {
+#   backend "local" {}
+# }
