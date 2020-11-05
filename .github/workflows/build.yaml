@@ -37,5 +37,5 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
       - run: gcloud info
-      - run: terraform init terraform/environments/development 
-      - run: terraform validate terraform/environments/development 
+      - run: terraform init terraform/environments/development
+      - run: terraform validate terraform/environments/development
